@@ -1,0 +1,117 @@
+.header--nav{
+  margin: 15px auto;
+}
+.fa-bars{
+  font-size: 25px;
+}
+.nav--menu{
+  max-width: 1200px;
+  height: 100%;
+}
+.nav--menu-links{
+  list-style: none;
+  margin-bottom: 0;
+}
+.nav--menu-links li{
+  margin: 10px;
+  font-size: 20px;
+  color: var(--primaryColor);
+  font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+  cursor: pointer;
+}
+.nav--menu-dropdown{
+  height: 320px;
+  overflow: hidden;
+}
+.list-group{
+  margin: auto;
+  margin-top: 12px;
+  height: 1px;
+}
+
+/*------------------ footer ------------------*/
+.footer-control{
+  max-width: 1200px;
+  margin: auto;
+}
+.footer--txt{
+ display: flex;
+ flex-direction: column;
+}
+.footer--inf{
+  min-width: 244px;
+  height: 134px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer--inf h2{
+  font-family: 'Croissant One', cursive;
+}
+.footer--inf p{
+  color: white;
+  border-left: 5px solid var(--primaryColor);
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.footer-form{
+  width: 80vw;
+  margin-left: 50px;
+}
+.form-control{
+  margin: 5px;
+}
+.txtarea{
+  height: 100px;
+}
+.form--btnEnviar{
+  color: white !important;
+  background-color: var(--primaryColor) !important;
+  border: none;
+  border-radius: 5px ;
+  display: inline-block ;
+  font-size: 20px;
+  font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+  margin: 5px;
+}
+.form--btnEnviar:hover{
+  background-color: rgba(68,39,4,0.5) !important;
+}
+.form--btnEnviar:focus{
+  background-color: rgba(68,39,4,0.5) !important;
+  outline: 1px solid #e7bd95;
+}
+.footer-img{
+  margin: auto;
+  width: 92vw;
+  height: auto;
+}
+.footer--ourInf{
+ margin-top: 15px;
+}
+.footer--ourInf-sn{
+  width: 50px;
+}
+@media all and (min-width: 540px){
+  .footer-img{
+    width: 420px;
+  }
+  .footer--ourInf-sn{
+    font-size: 24px;
+  }
+  .footer--ourInf-name{
+   font-size: 24px;
+  }
+}
+@media all and ( min-width: 960px){
+
+  .footer--txt{
+   flex-direction: row;
+  }
+  .footer-form{
+    width: 420px;
+    margin-left: 50px;
+  }
+  .footer-img{
+    margin: none;
+  }
+}

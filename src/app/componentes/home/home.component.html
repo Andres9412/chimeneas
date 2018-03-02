@@ -1,0 +1,71 @@
+<section class="intro ">
+  <div class="intro--container d-flex flex-column justify-content-center align-items-center">
+    <div class="intro--container__content">
+      <h1 class="intro--title">Llevamos calor a tu hogar</h1>
+      <a class="intro--button btn-home d-flex justify-content-center align-items-center">
+        <i class="fas fa-phone"></i>
+        <p>Llamanos</p>
+      </a>
+    </div>
+  </div>
+  <div>
+    <a  pageScroll [pageScrollDuration]="900" href="#home--container">
+      <i class="fas fa-angle-down"></i>
+    </a>
+  </div>
+</section>
+<section class="home--container" id="home--container">
+  <article class="chimeneas home--content d-flex flex-column align-items-center flex-xl-row-reverse">
+    <img class="home--img" src="https://chimeneasayd.com/wp-content/uploads/2018/02/Chimenea-de-lena.png" alt="">
+    <div  [@menuOp]='state' (appear)="onAppear()"  class="home--contentText">
+      <h2>Chimeneas</h2>
+      <p>Chimeneas a gas, bioetanol y leña; modernas, diseños completamente personalizables. Cumplen con los más altos estandares de calidad y seguridad para llenar tu hogar de calor y confort…</p>
+      <a class="btn-home home--contentText-btn d-flex justify-content-center align-items-center">
+        <p class="btn--home--txt">
+          Conoce mas <i class="fas fa-chevron-circle-right"></i>
+        </p>
+      </a>
+    </div>
+  </article>
+  <article class="muebles home--content d-flex flex-column align-items-center flex-xl-row">
+    <img class="home--img" src="https://chimeneasayd.com/wp-content/uploads/2018/02/Banca-de-exterior.png" alt="">
+    <div [@menuOp]='state2' (appear)="onAppear2()" class="home--contentText">
+      <h2>Muebles Para Exterior</h2>
+      <p>
+        Variedad de muebles para exteriores; sillas, comedores, masetas, parasoles. Elaborados en aluminio fundido extremadamente resistente a la intemperie…      </p>
+      <a class="btn-home home--contentText-btn d-flex justify-content-center align-items-center">
+        <p class="btn--home--txt">
+          Conoce mas <i class="fas fa-chevron-circle-right"></i>
+        </p>
+      </a>
+    </div>
+  </article>
+  <article class="hornos home--content d-flex flex-column align-items-center flex-xl-row-reverse">
+    <img class="home--img" src="https://chimeneasayd.com/wp-content/uploads/2018/02/Horno-a-lena.png" alt="">
+    <div [@menuOp]='state3' (appear)="onAppear3()" class="home--contentText">
+      <h2>Hornos</h2>
+      <p>
+        Hornos fabricados a medidas, con gran variedad de diseños clasicos y modernos; ideales para preparar comidas únicas en días especiales para compartir en familia y amigos…
+      </p>
+      <a class="btn-home home--contentText-btn d-flex justify-content-center align-items-center">
+        <p class="btn--home--txt">
+          Conoce mas <i class="fas fa-chevron-circle-right"></i>
+        </p>
+      </a>
+    </div>
+  </article>
+  <article class="asadores home--content d-flex flex-column align-items-center flex-xl-row">
+    <img class="home--img" src="https://chimeneasayd.com/wp-content/uploads/2018/02/Asadores.png" alt="">
+    <div [@menuOp]='state4' (appear)="onAppear4()" class="home--contentText">
+      <h2>Asadores</h2>
+      <p>
+        Disfruta el placer de preparar asados con nuestros asadores a gas y carbón…
+      </p>
+      <a class="btn-home home--contentText-btn d-flex justify-content-center align-items-center">
+        <p class="btn--home--txt">
+          Conoce mas <i class="fas fa-chevron-circle-right"></i>
+        </p>
+      </a>
+    </div>
+  </article>
+</section>

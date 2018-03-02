@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'Open Sans', sans-serif;
+  --primaryColor: #442704;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: stretch;
+  overflow: hidden;
+  position: relative;
+}
+.header{
+ height: 80px;
+ width: 100vw;
+ background-color: rgba(255,255,255,0.83);
+ position: absolute;
+}
+.main--container{
+  flex: 1 1 auto;
+
+}
+.footer{
+ background-color: #e7bd95;
+}

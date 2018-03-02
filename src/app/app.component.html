@@ -1,20 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="header ">
+  <nav class=" container header--nav ">
+    <div class="row nav--menu d-flex justify-content-between align-items-center">
+      <div class="img-logo">
+        <img src="assets/Logo-ChimeneasAYD.png" alt="logo empresa">
+      </div>
+      <i class="fas fa-bars d-lg-none" (click)='openMenu()'></i>
+      <div class="d-none d-lg-block nav--menu-navigation ">
+        <ul  class=" nav--menu-links d-flex">
+          <li class="">Inicio</li>
+          <li class="">Asadores</li>
+          <li class="">Chimeneas</li>
+          <li class="">Hornos</li>
+          <li class="">Muebles para el exterior</li>
+          <li class="">Contactenos</li>
+        </ul>
+      </div>
+    </div>
+    <div [@menuOp]='state' class="row nav--menu-dropdown d-lg-none">
+      <ul  class="list-group">
+        <li class="list-group-item">Inicio</li>
+        <li class="list-group-item">Asadores</li>
+        <li class="list-group-item">Chimeneas</li>
+        <li class="list-group-item">Hornos</li>
+        <li class="list-group-item">Muebles para el exterior</li>
+        <li class="list-group-item">Contactenos</li>
+      </ul>
+    </div>
+  </nav>
 
+</header>
+<div class="main--container">
+  <app-home></app-home>
+</div>
+<footer class="footer " id="footer">
+ <div class="footer-control">
+   <section class=" footer--txt ">
+     <div>
+       <div class="footer--inf">
+         <h2>Contáctanos</h2>
+         <p>320 452 7559 <br>
+           contacto@chimeneasayd.com</p>
+       </div>
+       <div class="footer-form">
+         <form >
+           <input  class="form-control" placeholder="Nombre"  >
+           <input  class="form-control" placeholder="Correo electronico" >
+           <textarea class="form-control txtarea" placeholder="Mensaje" ></textarea>
+           <button type="submit" class="form--btnEnviar " type="submit"> <i class="far fa-envelope"></i> Enviar</button>
+         </form>
+       </div>
+     </div>
+     <img class="footer-img" src="https://chimeneasayd.com/wp-content/uploads/2018/02/BicicletaMaseta.png" alt="imagen de un floreo en forma de bicicleta">
+   </section>
+   <section class="footer--ourInf d-flex flex-column align-items-center flex-md-row-reverse justify-content-between">
+     <div class="footer--ourInf-sn d-flex justify-content-between">
+       <i class="fab fa-facebook-square "></i>
+       <i class="fab fa-instagram "></i>
+     </div>
+     <p class="footer--ourInf-name" >Chimeneas A&D | 2018</p>
+   </section>
+ </div>
+</footer>

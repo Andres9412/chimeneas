@@ -1,0 +1,135 @@
+.intro{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://chimeneasayd.com/wp-content/uploads/2018/02/Chimeneas-ayd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro--container{
+  flex: 1 1 auto;
+  min-width: 256px;
+  height: 320px;
+
+}
+.intro--container__content{
+  margin: 20px 25.594px;
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 180px;
+
+}
+.intro--title{
+  font-family: 'Croissant One', cursive;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  text-shadow: 0.04em 0.04em 0.04em rgba(0,0,0,0.4);
+}
+.intro--button{
+  border: 3px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 6px 6px 18px 0px;
+  margin: 35px auto;
+  font-size: 20px !important;
+  width: 148.19px;
+  height: 50px;
+}
+.intro--button:hover{
+  background-color: rgba(68,39,4,0.5);
+}
+.btn-home{
+  color: white !important;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  display: inline-block;
+}
+.fa-phone{
+  transform: scaleX(-1);
+}
+.intro--button p {
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-weight: 100;
+}
+.fa-angle-down{
+  font-size: 48px;
+  color: white;
+  animation: angle-down 1s linear  infinite;
+}
+.home--container{
+  margin-top: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+.home--content{
+  margin: 70px auto;
+}
+.home--contentText{
+  width: 80vw;
+  color:var(--primaryColor);
+  margin: 30px auto;
+}
+.home--contentText h2{
+  font-family: 'Croissant One', cursive;
+  padding-left: 20px;
+}
+.home--contentText p{
+  font-weight: 100;
+  font-size: large;
+  line-height: 30px;
+  border-left: 5px solid var(--primaryColor);
+  padding-left: 20px;
+  color: #6b635f;
+}
+.home--contentText-btn{
+  margin: 20px auto;
+  height: 40px;
+  width: 160px;
+}
+.home--contentText-btn:hover{
+  background-color: rgba(68,39,4,0.5);
+}
+.btn--home--txt{
+  padding-left: 0 !important;
+  color: white !important;
+  margin-bottom: 0;
+  border-left: none !important;
+
+}
+
+.home--img{
+  width: 80vw;
+  height: auto;
+}
+@media all and (min-width: 540px){
+  .home--img{
+    width: 420px;
+  }
+}
+@media all and (min-width:720px){
+  .intro--title{
+    font-size: 60px;
+  }
+}
+@media all and (min-width:960px){
+  .home--contentText{
+    max-width: 520px;
+  }
+}
+
+@keyframes angle-down {
+  20%, 50%, 80%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-20%);
+  }
+  60%{
+    transform: translateY(-15%);
+  }
+}
